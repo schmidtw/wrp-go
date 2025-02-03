@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/xmidt-org/wrp-go/v4"
+	"github.com/schmidtw/wrp-go/v4"
 )
 
 // This file defines the different message types so tests can be constructed

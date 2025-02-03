@@ -9,8 +9,8 @@ import (
 	"testing"
 	"unicode/utf8"
 
+	"github.com/schmidtw/wrp-go/v4"
 	"github.com/stretchr/testify/assert"
-	"github.com/xmidt-org/wrp-go/v4"
 )
 
 func TestInvalidUtf8Decoding(t *testing.T) {
