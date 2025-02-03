@@ -8,8 +8,12 @@ import (
 	"regexp"
 )
 
-//go:generate go install github.com/ugorji/go/codec/codecgen@latest
-//go:generate codecgen -st "json" -o messages_codec.go messages.go
+//go:generate go install github.com/tinylib/msgp@latest
+//go:generate msgp -io=false
+//msgp:replace MessageType with:int64
+//msgp:replace QOSValue with:int
+//msgp:tag json
+//msgp:newtime
 
 var (
 	// eventPattern is the precompiled regex that selects the top level event
